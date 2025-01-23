@@ -33,3 +33,22 @@ function notify(gmail){
     }
 }
 notify(user);
+
+
+
+
+// problem 3
+
+function nameCheck(name){
+    for(let letter of name){
+        if(letter=='number'){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+}
+const nidhu ='Jannat33';
+const result = nameCheck(nidhu);
+console.log(result);
