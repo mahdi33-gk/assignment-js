@@ -20,13 +20,11 @@ console.log(tax);
 const user= 'sajjatAhmed@gmail.com';
 
 function notify(gmail){
-    const newone=gmail.split('@gmail.com');
+    const newone=gmail.split('@');
+    const first= newone[0];
+    const second= newone[1];
     
-    const result = newone + ' sent you an email.'
+    const result = first + ' sent you an email. From '+ second;
     console.log(result);
 }
 notify(user);
-
-const tri = 'mehedi#mail.com';
-const rival= tri.slice('#');
-console.log(rival);
