@@ -1,6 +1,6 @@
 
 function calculateTax(income, expenses) { 
-    if((typeof income === 'number' || typeof expenses === 'number') && income>0 && expenses>0){
+    if((typeof income === 'number' || typeof expenses === 'number') && income>0 && !expenses > income && expenses>0 ){
         const defTwo = income - expenses;
         const tax =  defTwo * 0.2;
         return tax;
@@ -10,7 +10,7 @@ function calculateTax(income, expenses) {
     }
 }
 
-const tax= calculateTax(7000,7000);
+const tax= calculateTax(70000,7000);
 console.log(tax);
 
 
