@@ -20,11 +20,16 @@ console.log(tax);
 const user= 'sajjatAhmed@gmail.com';
 
 function notify(gmail){
-    const newone=gmail.split('@');
-    const first= newone[0];
-    const second= newone[1];
-    
-    const result = first + ' sent you an email. From '+ second;
-    console.log(result);
+    if(gmail.includes('@')){
+        const newone=gmail.split('@');
+        const first= newone[0];
+        const second= newone[1];
+        
+        const result = first + ' sent you an email. From '+ second;
+        console.log(result)
+    }
+    else{
+        console.log('add @ please.');
+    }
 }
 notify(user);
