@@ -14,3 +14,19 @@ const tax= calculateTax(7000,70000);
 console.log(tax);
 
 
+
+// we have a make a fucking function for generating notificationn who sent you faking mail..
+
+const user= 'sajjatAhmed@gmail.com';
+
+function notify(gmail){
+    const newone=gmail.split('@gmail.com');
+    
+    const result = newone + ' sent you an email.'
+    console.log(result);
+}
+notify(user);
+
+const tri = 'mehedi#mail.com';
+const rival= tri.slice('#');
+console.log(rival);
