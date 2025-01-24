@@ -60,7 +60,7 @@ function selectVersity(information){
         return 'invalid';
     }
     else{
-        if(information.testScore <= 50 && information.schoolGrade <= 30  && isFFamily==true){
+        if(information.testScore <= 50 && information.schoolGrade <= 30  && information.isFFamily === true){
             return true;
         }
         else{
