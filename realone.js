@@ -52,3 +52,28 @@ function nameCheck(name){
 const nidhu ='Jannat33';
 const result = nameCheck(nidhu);
 console.log(result);
+
+// problem3 name,  testScore, schoolGrade, isFFamily
+
+function selectVersity(information){
+    if(typeof information !== 'object'){
+        return 'invalid';
+    }
+    else{
+        if(information.testScore <= 50 && information.schoolGrade <= 30  && isFFamily==true){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+}
+
+const nithu = {name:'Ami',testScore: 50, schoolGrade:30, isFFamily:true};
+const mehedii = {name:'Ami',testScore: 50, schoolGrade:30, isFFamily:false};
+const aboni = {name:'Ami',testScore: 50, schoolGrade:300, isFFamily:true};
+
+const realone= selectVersity(nithu);
+const realone1= selectVersity(mehedii);
+const realone2= selectVersity(aboni);
+console.log(realone, realone1, realone2);
