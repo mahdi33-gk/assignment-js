@@ -8,7 +8,10 @@ function  waitingTime(waitingTimes  , serialNumber) {
         sum += tiime;
         }
         const av = sum / waitingTimes.length;
-        return av;
+        const herTime = serialNumber - waitingTime.length;
+        const timeCome = herTime * av ;
+
+        return timeCome + ' min later her tiime will come.'
     }
     
 }
